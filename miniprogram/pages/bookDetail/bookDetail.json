@@ -1,0 +1,9 @@
+{
+  "usingComponents": {
+    "van-button": "../../vant/button/index",
+    "van-rate": "../../vant/rate/index",
+    "van-panel": "../../vant/panel/index",
+    "van-dialog": "../../vant/dialog/index",
+    "van-field": "../../vant/field/index"
+  }
+}

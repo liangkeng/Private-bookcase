@@ -1,0 +1,58 @@
+<view>
+  <text>{{book.title}}</text>
+  <image src='{{book.images.small}}'></image>
+</view>
+
+<view>
+  <text>定价：{{book.price}}</text>
+  <text>    出版年：{{book.pubdate}}</text>
+</view>
+<view>
+  <text>豆瓣评分</text>
+  <van-rate value="{{ book.rating.average}}" size="{{ 15 }}" count="{{ 10 }}" color="#2ba" void-color="#ceefe8" />
+</view>
+
+<view>
+  <text>购入价：{{book.cost}}</text>
+  <text>    购入书店：{{book.bookStore}}</text>
+</view> 
+<view>
+  <text>备注：{{book.message}}</text>
+</view>
+
+<van-panel title="作品简介">
+  <view>
+    <text>{{book.summary}}</text>
+  </view>
+</van-panel>
+<van-panel title="目录">
+  <view>
+    <text>{{book.catalog}}</text>
+  </view>
+</van-panel>
+
+<view>
+  <van-button type="warning" data-id="{{id}}" bind:click="updateBookData">更改数据</van-button>
+  <!-- <van-button type="warning" data-id="{{id}}" bind:click="update">更新数据</van-button> -->
+  <van-button type="danger" data-id="{{id}}" bind:click="delete">删除数据</van-button>
+</view>
+<van-dialog use-slot async-close show="{{ show }}" show-cancel-button confirm-button-open-type="getUserInfo" bind:close="onClose" bind:getUserInfo="getUserInfo">
+<van-cell-group>
+  <van-field bind:change='changeCost'
+    value="{{ costView }}" 
+    label="购入价"  
+    placeholder="购买的花费" />
+  <van-field bind:change='changeBookStore'
+    value="{{ bookStoreView }}"
+    label="购入书店" 
+    placeholder="在哪里购入"/>
+  <van-field bind:change='changeMessage'
+    value="{{ messageView }}"
+    label="备注"
+    type="textarea"
+    placeholder=""
+    autosize
+    border="{{ false }}"
+  />
+</van-cell-group>
+</van-dialog>
