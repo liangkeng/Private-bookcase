@@ -43,12 +43,13 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function() {
-    console.log('this:',this)
+    console.log('onShow  this:',this)
     db.collection('mybook').doc(this.data.id).get({
       success: res => {
         console.log(res.data);
         this.setData({
-          book: res.data
+          book: res.data,
+          id: options.id
         });
       },
       fail: err => {

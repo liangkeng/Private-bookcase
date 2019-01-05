@@ -1,36 +1,49 @@
-<view>
-  <text>{{book.title}}</text>
-  <image src='{{book.images.small}}'></image>
-</view>
+<van-panel title="封面">
+  <view class="cla">
+    <image style="width: 200px; height: 200px;" mode='widthFix' src='{{book.image}}'></image>
+  </view>
 
-<view>
-  <text>定价：{{book.price}}</text>
-  <text>    出版年：{{book.pubdate}}</text>
-</view>
-<view>
-  <text>豆瓣评分</text>
-  <van-rate value="{{ book.rating.average}}" size="{{ 15 }}" count="{{ 10 }}" color="#2ba" void-color="#ceefe8" />
-</view>
+</van-panel>
+<van-panel title="作者">
+  <view class="cla">
+    <text>{{book.author[0]}}</text>
+  </view>
+</van-panel>
+<van-panel title="出版信息">
 
-<view>
-  <text>购入价：{{book.cost}}</text>
-  <text>    购入书店：{{book.bookStore}}</text>
-</view> 
-<view>
-  <text>备注：{{book.message}}</text>
-</view>
+  <view class="cla">
+    <text>出版社：{{book.publisher}}</text>
+    <text class="secondText">出版日期：{{book.pubdate}}</text>
+  </view>
+</van-panel>
+
+<van-panel title="豆瓣评分">
+  <view class="cla">
+
+    <van-rate value="{{ book.rating.average}}" size="{{ 15 }}" count="{{ 10 }}" color="#2ba" void-color="#ceefe8" />
+  </view>
+</van-panel>
+<van-panel title="我的信息">
+  <view class="cla">
+    <text>购入价：{{book.cost}}</text>
+    <text class="secondText">购入书店：{{book.bookStore}}</text>
+    <view>
+    <text >备注：{{book.message}}</text>
+    </view>
+  </view>
+</van-panel>
+
 
 <van-panel title="作品简介">
-  <view>
+  <view class="cla">
     <text>{{book.summary}}</text>
   </view>
 </van-panel>
 <van-panel title="目录">
-  <view>
+  <view class="cla">
     <text>{{book.catalog}}</text>
   </view>
 </van-panel>
-
 <view>
   <van-button type="warning" data-id="{{id}}" bind:click="updateBookData">更改数据</van-button>
   <!-- <van-button type="warning" data-id="{{id}}" bind:click="update">更新数据</van-button> -->

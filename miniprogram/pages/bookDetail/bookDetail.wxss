@@ -1,1 +1,15 @@
 /* pages/bookDetail/bookDetail.wxss */
+
+.cla{
+  font-size: 30rpx;
+  margin:40rpx 40rpx 40rpx 40rpx;
+
+}
+
+.secondText{
+  margin-left: 30rpx;
+}
+
+van-button{
+  margin-left: 40rpx;
+}
