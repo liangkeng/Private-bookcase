@@ -1,0 +1,42 @@
+<view>
+<form bindsubmit="formSubmit" bindreset="formReset">
+
+
+<view class='cla_a'>
+<view class='cla_b'>标题</view>
+<view class='cla_c'>
+<input name="title" placeholder="请输入标题" />
+
+</view>
+</view>
+<view class='cla_a'>
+<view class='cla_b'>心情</view>
+<view class='cla_c'>
+<radio-group name="mood">
+<label>
+<radio value="高兴" />高兴</label>
+<label>
+<radio value="难过" />难过 </label>
+<label>
+<radio value="平静" />平静 </label>
+<label>
+<radio value="兴奋" />兴奋 </label>
+
+</radio-group>
+</view>
+</view>
+
+<view class='cla_a'>
+<view class='cla_b'>内容</view>
+<view class='cla_c'>
+<textarea name="content" placeholder="请输入内容" />
+</view>
+</view>
+
+<view class='cla_a'>
+<button type='primary' formType="submit">Submit</button>
+</view>
+</form>
+</view>
+
+<van-toast id="van-toast" />

@@ -1,1 +1,4 @@
-/* pages/scanCode/scanCode.wxss */
+.cla_a {
+font-size: 150rpx;
+margin: 40rpx 40rpx 40rpx 40rpx;
+}

@@ -115,6 +115,9 @@ Page({
         })
       }
     })
+
+    //todo还应该删除bookNote集合中对应的笔记数据
+    
   },
   updateBookData: function() {
     this.setData({

@@ -1,1 +1,14 @@
-/* pages/bookAddNote/bookAddNote.wxss */
+
+.cla_a {
+font-size: 30rpx;
+margin: 40rpx 40rpx 40rpx 40rpx;
+}
+
+.cla_b {
+margin-bottom: 10rpx;
+}
+
+.cla_c {
+border: 2rpx solid rgb(30, 216, 139);
+padding: 20rpx 20rpx 20rpx 20rpx;
+}

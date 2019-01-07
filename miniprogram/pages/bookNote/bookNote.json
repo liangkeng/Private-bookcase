@@ -2,6 +2,8 @@
   "usingComponents": {
     "van-button": "../../vant/button/index",
     "van-row": "../../vant/row/index",
-    "van-col": "../../vant/col/index"
+    "van-col": "../../vant/col/index",
+    "van-panel": "../../vant/panel/index",
+    "van-toast": "../../vant/toast/index"
   }
 }

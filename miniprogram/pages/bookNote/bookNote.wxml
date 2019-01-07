@@ -1,11 +1,18 @@
-<van-row gutter="20">
-  <van-col sapn="8" offset="8">
-    <van-button type="primary" bind:click='addNotePage'>添加笔记</van-button>
-  </van-col>
-</van-row>
+
+<form bindsubmit="addNotePage">
+<view class='cla_b'>
+<button type='primary' formType="submit">添加笔记</button>
+</view>
+</form>
+
 
 <view wx:for="{{noteList}}">
-  <van-panel title="item.title" desc="item.time" status="item.mood">
-    <view>{{item.content}}</view>
+  <van-panel title="{{item.title}}" desc="{{item.time}}" status="{{item.mood}}" use-footer-slot>
+    <view class='cla_a'>{{item.content}}</view>
+    <view slot="footer">
+      <van-button size="small" type="danger"  bind:click="deleteNote" data-id="{{item._id}}">删除笔记</van-button>
+    </view>
   </van-panel>
 </view>
+
+<van-toast id="van-toast" />

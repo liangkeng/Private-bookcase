@@ -1,4 +1,6 @@
 // pages/scanCode/scanCode.js
+import Toast from '../../vant/toast/toast';
+
 Page({
 
   /**
@@ -98,6 +100,13 @@ Page({
              }).catch(err =>{
                console.log(err)
              })
+
+             //轻提示
+           Toast.loading({
+             type: 'success',
+             message: '加书成功',
+             duration: 500
+           });
          },
          fail:err =>{
            console.log(err)

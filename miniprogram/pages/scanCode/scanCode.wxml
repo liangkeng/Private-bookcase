@@ -1,5 +1,7 @@
-<van-row gutter="20">
-  <van-col sapn="8" offset="8">
-    <van-button type="primary" bind:click="scanCode">扫码加书</van-button>
-  </van-col>
-</van-row>
+<form bindsubmit="scanCode">
+<view class='cla_a'>
+<button type='primary' formType="submit">扫码加书</button>
+</view>
+</form>
+
+<van-toast id="van-toast" />
