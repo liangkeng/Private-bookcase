@@ -130,6 +130,7 @@ Page({
   changeMessage(value){
     this.setData({ message: value })
   },
+  /*修改个人数据对话框关闭*/
   onClose(event) {
     if (event.detail === 'confirm') {
       //TODO 保存到数据库 

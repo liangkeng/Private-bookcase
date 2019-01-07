@@ -1,0 +1,11 @@
+<van-row gutter="20">
+  <van-col sapn="8" offset="8">
+    <van-button type="primary" bind:click='addNotePage'>添加笔记</van-button>
+  </van-col>
+</van-row>
+
+<view wx:for="{{noteList}}">
+  <van-panel title="item.title" desc="item.time" status="item.mood">
+    <view>{{item.content}}</view>
+  </van-panel>
+</view>

@@ -80,5 +80,11 @@ Page({
     wx.navigateTo({
       url: '../bookDetail/bookDetail?id='+id,
     })
+  },
+  viewNote: function (event){
+    var id = event.currentTarget.dataset.id;
+    wx.navigateTo({
+      url: '../bookNote/bookNote?id='+id,
+    })
   }
 })

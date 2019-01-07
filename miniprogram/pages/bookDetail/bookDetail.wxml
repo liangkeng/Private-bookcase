@@ -45,7 +45,7 @@
   </view>
 </van-panel>
 <view>
-  <van-button type="warning" data-id="{{id}}" bind:click="updateBookData">更改数据</van-button>
+  <van-button type="warning" data-id="{{id}}" bind:click="updateBookData">修改我的信息</van-button>
   <!-- <van-button type="warning" data-id="{{id}}" bind:click="update">更新数据</van-button> -->
   <van-button type="danger" data-id="{{id}}" bind:click="delete">删除数据</van-button>
 </view>

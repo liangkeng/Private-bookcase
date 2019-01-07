@@ -10,8 +10,8 @@
     </view>
 
     <view slot="footer">
+      <van-button size="small" round type="primary" bind:click="viewNote" data-id="{{item._id}}">笔记</van-button>
       <van-button size="small" round type="primary" bind:click="viewItem" data-id="{{item._id}}">查看详情</van-button>
     </view>
-
   </van-card>
 </view>
