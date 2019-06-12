@@ -12,6 +12,9 @@
 - 交友交流功能
 - 分享功能
 
+# 界面
+暂无 
+ 
 ## 参考文档
 
 - [云开发文档](https://developers.weixin.qq.com/miniprogram/dev/wxcloud/basis/getting-started.html)
